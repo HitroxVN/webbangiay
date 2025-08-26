@@ -1,0 +1,164 @@
+:root {
+  --max-w: 1100px;
+  --accent: #111827;
+  --muted: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  margin: 0;
+  color: #111;
+  background: #fff;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.main-nav a {
+  margin-right: 1rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.cart-btn {
+  background: #111;
+  color: #fff;
+  padding: .4rem .7rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgb(137, 199, 244);
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-link:hover {
+  background-color: #0056b3;
+}
+
+/* Button */
+.btn {
+  background: var(--accent);
+  color: white;
+  padding: .6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Hero */
+.hero {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.hero-inner {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero img {
+  max-width: 50%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Featured + Info cards */
+.featured h2 {
+  margin-top: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer.site-footer {
+  border-top: 1px solid #eee;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+/* Auth form */
+.notice {
+  padding: 1rem;
+  background: #ecfccb;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.auth {
+  max-width: 520px;
+  margin: 2rem auto;
+}
+
+.auth form label {
+  display: block;
+  margin-bottom: .8rem;
+}
+
+.auth input {
+  width: 100%;
+  padding: .6rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Responsive */
+@media (max-width:900px) {
+  .hero-inner {
+    flex-direction: column;
+  }
+}
